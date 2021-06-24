@@ -4,17 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Vanilla Weather App</title>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div class="weather-app">
+    <div class="container">
+      <form>
+        <input type="text" placeholder="Search a city..." autofocus=on>
+        <input type="submit" value="Search">
+        <input type="submit" value="Current City">
+    </form>
+      <div class="row">
+      <div class="col-3">
+        <h2>Morrison, CO USA</h2>
+        <ul>
+          <li>Wednesday, June 23rd</li>
+          <li>8:30 pm</li>
+       </ul>
+      </div>
+      <div class="col-3">
+          <img src="file:///Users/kelsiprice/Library/Mobile%20Documents/com~apple~CloudDocs/Visual%20Studio/SheCodes%20Lessons/Plus%20week%202/Weather%20App/images/sunny%20copy.png" alt="sunny">
+      </div>
+      <div class="col-3">
+        81ºF | ºC
+      </div>
+      <div class="col-3">
+        <ul>
+          <li>
+            Precipitation
+          </li>
+          <li>
+            Humidity
+          </li>
+          <li>Wind</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+    <small> <a href="https://github.com/kprice31/Vanilla-weather-app" target="_blank">Open-sourced code</a> by Kelsi Price</small>
+  </div>
     <script src="src/app.js"></script>
   </body>
 </html>
