@@ -15,42 +15,68 @@
     <title>Vanilla Weather App</title>
   </head>
   <body>
-    <div class="weather-app">
-    <div class="container">
-      <form>
-        <input type="text" placeholder="Search a city..." autofocus=on>
-        <input type="submit" value="Search">
-        <input type="submit" value="Current City">
-    </form>
-      <div class="row">
-      <div class="col-3">
-        <h2>Morrison, CO USA</h2>
-        <ul>
-          <li>Wednesday, June 23rd</li>
-          <li>8:30 pm</li>
-       </ul>
+    <div class="weather-app-wrapper">
+     <div class="weather-app">
+      <div class="container">
+        <form id="search-form" class="mb-3"></form>
+          <div class="row">
+            <div class="col-7">
+              <input 
+                type="search" 
+                placeholder="Search a city..." 
+                autofocus=on
+                class="form-control"
+                id="city-input"
+                autocomplete="off"
+              />
+            </div>
+            <div class="col-5">
+              <input type="submit" value="Search">
+              <input type="submit" value="Current">
+            </div>
+          </form>
+        </div>
+        
+        <div class="row">
+          <div class="col-4">
+            <h2>Morrison, CO USA</h2>
+            <ul>
+              <li>Wednesday, June 23rd</li>
+              <li>8:30 pm</li>
+            </ul>
+          </div>
+          <div class="col-4">
+            <div class="clearfix">
+              <img src="file:///Users/kelsiprice/Library/Mobile%20Documents/com~apple~CloudDocs/Visual%20Studio/SheCodes%20Lessons/Plus%20week%202/Weather%20App/images/sunny%20copy.png" 
+              alt="sunny" 
+              class="float-left"
+              />
+              <div class="float-left">
+                81ºF | ºC
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <ul>
+              <li>
+                Precipitation
+              </li>
+              <li>
+                Humidity
+              </li>
+              <li>Wind</li>
+            </ul>
+          </div>
+        </div>
       </div>
-      <div class="col-3">
-          <img src="file:///Users/kelsiprice/Library/Mobile%20Documents/com~apple~CloudDocs/Visual%20Studio/SheCodes%20Lessons/Plus%20week%202/Weather%20App/images/sunny%20copy.png" alt="sunny">
-      </div>
-      <div class="col-3">
-        81ºF | ºC
-      </div>
-      <div class="col-3">
-        <ul>
-          <li>
-            Precipitation
-          </li>
-          <li>
-            Humidity
-          </li>
-          <li>Wind</li>
-        </ul>
-      </div>
-      </div>
+     </div>
+        <small>
+          <a href="https://github.com/kprice31/Vanilla-weather-app" target="_blank">
+            Open-sourced code
+          </a> 
+            by Kelsi Price
+        </small>
     </div>
-    <small> <a href="https://github.com/kprice31/Vanilla-weather-app" target="_blank">Open-sourced code</a> by Kelsi Price</small>
-  </div>
     <script src="src/app.js"></script>
   </body>
 </html>
