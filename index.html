@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 
-    <title>Vanilla Weather App</title>
+    <title>Vanilla Weather Site</title>
   </head>
   <body>
     <div class="weather-app-wrapper">
@@ -45,7 +45,7 @@
             
             <ul>
               <li><span id="date"></span></li>
-              <li><span id="time"></span>pm</li>
+              <li><span id="time"></span> pm</li>
             </ul>
           </div>
           </div>
@@ -57,7 +57,9 @@
               class="float-left"
               />
               <span class="float-left" >
-                <strong id="temperature"></strong><small class="units">ºC | <a href="#">ºF</a></small>
+                <strong id="temperature"></strong><small class="units">
+                  <a href="#" id="fahrenheit-link" class="active">ºF</a> | 
+                  <a href="#" id="celsius-link">ºC</a></small>
               </span>
             </div>
           </div>
@@ -76,7 +78,7 @@
       </div>
      </div>
         <small>
-          <a href="https://github.com/kprice31/Vanilla-weather-app" target="_blank">
+          <a href="https://github.com/kprice31/Vanilla-weather-app" target="_blank" class="credits">
             Open-sourced code
           </a> 
             by Kelsi Price
