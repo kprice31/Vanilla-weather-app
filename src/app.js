@@ -35,12 +35,13 @@ function formalTime(timestamp) {
   if (hours < 10) {
     hours = `0${hours}`;
   }
-
+  let suffix = hours >= 12 ? "PM" : "AM";
+  hours = ((hours + 11) % 12) + 1;
   let minutes = date.getMinutes();
   if (minutes < 10) {
     minutes = `0${minutes}`;
   }
-  let str = `${hours}:${minutes}`;
+  let str = `${hours}:${minutes} ${suffix}`;
   return str;
 }
 // forecast day timestamps
